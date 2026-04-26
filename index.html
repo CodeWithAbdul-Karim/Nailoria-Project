@@ -15,22 +15,24 @@
 <body>
     <header>
         <div class="header-menu">
+            <!-- Logo-->
+            <div class="nav-logo-container">
+                <div class="header-logo">
+                    <img src="images/Home/header-logo.jpg" alt="logo" width="65">
+                </div>
+                <div class="logo-name">
+                    <img src="images/Home/logo-name.png" alt="logo-name" width="130">
+                </div>
+            </div>
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <div class="nav-logo-container">
-                        <div class="header-logo">
-                            <a class="navbar-brand" href="#"><img src="images/Home/header-logo.jpg" alt="logo"
-                                    width="25"></a>
-                        </div>
-                        <div class="logo-name">
-                            <img src="images/Home/logo-name.png" alt="logo-name" width="25">
-                        </div>
-                    </div>
+                    <!-- Toggler button  -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- Tabs -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav nav-underline">
                             <li class="nav-item">
@@ -38,7 +40,7 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                                    aria-expanded="false" id="dropdown-color">
                                     About
                                 </a>
                                 <ul class="dropdown-menu">
@@ -71,7 +73,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Care Tips</a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown nav-contact">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Contact
@@ -91,9 +93,7 @@
         </div>
         <div class="header-content"></div>
     </header>
-
-
-
+    
 
     <!-- JS LINK -->
     <script src="index.js"></script>
