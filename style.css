@@ -1,12 +1,16 @@
-body{
+body {
   font-family: sans-serif;
 }
+
 /* HEADER  */
 header {
   display: flex;
+  position: relative;
+  overflow: hidden;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  padding-top: 70px;
+  min-height: 92vh;
   background-image: url(images/Home/header-img11.png);
   background-position: 90% 50%;
   background-size: cover;
@@ -45,11 +49,11 @@ header .header-menu {
 }
 
 .header-menu .nav-logo-container .header-logo img {
-  width: clamp(45px, 8vw, 65px);
+  width: clamp(55px, 8vw, 65px);
 }
 
 .header-menu .nav-logo-container .logo-name img {
-  width: clamp(95px, 14vw, 145px);
+  width: clamp(110px, 14vw, 145px);
 }
 
 .header-menu .navbar .container-fluid {
@@ -132,63 +136,141 @@ header .header-menu {
 .header-content .head-sub-txt {
   display: flex;
   max-width: 600px;
-  color: #555;
+  color: #2b2230;
   font-size: clamp(0.9rem, 2vw, 1.1rem);
 }
 
-.head-txt-container a {
-  text-decoration: none;
+.head-txt-container .head-btn button {
   background-color: #e71db1;
   border-radius: 0 25px;
   padding: 12px 14px;
   transition: .3s;
-  color: white;
   border: none;
-  font-family: sans-serif;
   font-weight: bold;
   font-size: clamp(0.9rem, 1.5vw, 1rem);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.head-txt-container a:hover {
+.head-txt-container .head-btn button a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.head-txt-container .head-btn button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px -8px rgba(255, 79, 135, .55);
   background-color: #d615a2;
+
 }
 
 .work {
-  height: 2200px;
+  height: 1200px;
 }
 
 /* HEADER CONTENT END*/
 
 /* FOOTER SEC START */
 footer {
-  background-image: url(images/team-img-extra/footer/footer-bg.png);
+  /* background-image: url(images/team-img-extra/footer/footer-bg.png); */
+  background: linear-gradient(160deg, #2b2230, #3d2a3a);
+  color: white;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top left;
+  background-position: top;
   font-family: sans-serif;
+  padding: 2.5rem 0 1.5rem;
 }
 
-footer .footer-txt{
+footer .footer-txt {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 2rem 0;
+  margin-bottom: 1rem;
 }
- footer .footer-txt ul{
-  padding: .5rem 0 0 1rem;
-  margin: 0;
- }
 
-footer .footer-txt ul li a{
+footer .footer-txt ul {
+  padding: .5rem 0 0 0rem;
+  margin: 0;
+  list-style-type: none;
+}
+
+footer .footer-txt ul li a {
   text-decoration: none;
-  color: rgb(72 72 72);
+  color: #f0e6ec;
+}
+
+footer .footer-txt ul li a:hover {
+  color: #ff7aa6;
+  transition: color .2s;
 }
 
 footer .footer-txt ul li {
   padding-bottom: .5rem;
 }
 
+footer .footer-txt ul img {
+  margin-right: 6px;
+  color: #e71db1;
+  background-color: #a94438;
+}
+
+footer .footer-logo-con {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.2rem;
+}
+
+footer .footer-logo-con .footer-logo img {
+  width: clamp(50px, 8vw, 60px);
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+footer .footer-logo-con .footer-logo-name img {
+  width: clamp(110px, 14vw, 135px);
+
+}
+
+footer .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+footer .social-icons .all-icon {
+  transition: all .2s;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+footer .social-icons .all-icon img {
+  width: 25px;
+}
+
+footer .social-icons .youtube-icon img {
+  width: 30px;
+}
+
+footer .social-icons .whatsapp-icon img {
+  width: 27px;
+}
+
+footer .social-icons .instagram-icon img {
+  width: 33px;
+}
+
+footer .social-icons .all-icon:hover {
+  cursor: pointer;
+  background-color: #ff7aa6;
+  transform: translateY(-2px);
+}
+
+footer ul li i {
+  color: #ff7aa6;
+  margin-right: .4rem;
+}
 
 /* FOOTER SEC END */
 
