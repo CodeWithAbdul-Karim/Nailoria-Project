@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Nailoria</title>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- BOOTSTRAP CSS LINK -->
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+
+    <!-- LINK OF GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Parisienne&family=Ramsina&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- NAVBAR  -->
+    <header class="header">
+        <!-- Logo-->
+        <div class="nav-logo-container">
+            <div class="header-logo">
+                <img src="images/Home/header-logo.png" alt="logo">
+            </div>
+            <div class="logo-name">
+                <img src="images/Home/logo-name.png" alt="logo-name">
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Toggler button  -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Tabs -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="dropdown-color">
+                                About
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">About Nail Art</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Categories</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Designs
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Designs with Steps</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Care Tips</a>
+                        </li>
+                        <li class="nav-item dropdown nav-contact">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Contact
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#feedback-section">Feedback Form</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- CONTACT FORM  -->
+        <section class="contact py-5">
+            <div class="container">
+                <h1 class="text-center">Contact Us</h1>
+                <p>Questions or collaborations? Drop us a message.</p>
+                <div class="row mt-3">
+                    <div class="contact-side col-lg-6 mt-3">
+                        <form id="nailoria-form" class="nailoria-contact form-card">
+                            <div class="mb-3">
+                                <label for="name" class="form-label input-field">Name</label>
+                                <input type="text" id="name" class="form-control">
+                                <p class="error text-danger mt-1"></p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label input-field">Email</label>
+                                <input type="text" id="email" class="form-control">
+                                <p class="error text-danger mt-1"></p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label input-field">Password</label>
+                                <input type="password" id="password" class="form-control">
+                                <p class="error text-danger mt-1"></p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="comment" class="mb-2">Message</label>
+                                <textarea class="form-control input-field" rows="5" id="comment" name="text"></textarea>
+                                <p class="error text-danger mt-1"></p>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Submit</button>
+                            <div class="alert alert-success mt-3 d-none" id="successAlert">
+                                Thanks! Your message is sent.
+                            </div>
+                        </form>
+                    </div>
+                    <div class="map-side col-lg-6 mt-3">
+                        <div class="map-container">
+                            <iframe class="map-iframe" title="Nailoria Studio Location Map"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1451.8953794316344!2d67.06794498441097!3d24.931856692370687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f684c7c5235%3A0xaa5aecef73222b2c!2sPlot%20B%2016%2C%20Block%2010%20Gulberg%20Town%2C%20Karachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1777570299334!5m2!1sen!2s"
+                                width="100%" height="580px" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- FEEDBACK FORM -->
+        <section class="feedback py-5" id="feedback-section">
+            <div class="container">
+                <h1 class="text-center">Share Your Feedback</h1>
+                <p>Help us improve — tell us what you love or what we can do better.</p>
+                <form id="feedback-form" class="form-card mx-auto mt-4">
+                    <div class="row">
+                        <div class="col-md-6 mt-1">
+                            <label for="f-name" class="form-label input-field">Name</label>
+                            <input type="text" id="f-name" class="form-control">
+                            <p class="error text-danger mt-1"></p>
+                        </div>
+                        <div class="col-md-6 mt-1">
+                            <label for="f-email" class="form-label input-field">Email</label>
+                            <input type="text" id="f-email" class="form-control">
+                            <p class="error text-danger mt-1"></p>
+                        </div>
+                        <div class="col-md-12 mt-1">
+                            <label for="rating" class="form-label input-field">Rating</label>
+                            <select id="rating" class="form-select">
+                                <option value="" selected disabled>Select your rating...</option>
+                                <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                                <option value="4">⭐⭐⭐⭐ Good</option>
+                                <option value="3">⭐⭐⭐ Average</option>
+                                <option value="2">⭐⭐ Poor</option>
+                                <option value="1">⭐ Very Poor</option>
+                            </select>
+                            <p class="error text-danger mt-1"></p>
+                        </div>
+                        <div class="col-md-12 mt-1">
+                            <label for="feedback" class="mb-2">Your feedback</label>
+                            <textarea class="form-control input-field" rows="5" id="feedback" name="text"></textarea>
+                            <p class="error text-danger mt-1"></p>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" id="submit-change-color">Submit</button>
+                        <div class="alert alert-success mt-3 d-none" id="f-successAlert">
+                            Thanks for your feedback.
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="footer-txt col-md-4">
+                    <div class="footer-logo-con">
+                        <div class="footer-logo"><img src="images/team-img-extra/footer/header-logo.jpg" alt="logo">
+                        </div>
+                        <div class="footer-logo-name"><img src="images/team-img-extra/footer/logo-name.png"
+                                alt="logo-name"></div>
+                    </div>
+                    <p>Designs that tell your story — tutorials, products and care for every nail lover.</p>
+                    <div class="social-icons">
+                        <div class="all-icon whatsapp-icon">
+                            <a href="#"><img src="images/team-img-extra/footer/social.png" alt="whatsapp-icon"></a>
+                        </div>
+                        <div class="all-icon youtube-icon">
+                            <a href="#"><img src="images/team-img-extra/footer/youtube.png" alt="youtube-icon"></a>
+                        </div>
+                        <div class="all-icon instagram-icon">
+                            <a href="#"><img src="images/team-img-extra/footer/instagram.png" alt="instagram-icon"></a>
+                        </div>
+                        <div class="all-icon facebook-icon">
+                            <a href="#"><img src="images/team-img-extra/footer/facebook.png" alt="facebook-icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-txt col-6 col-md-4">
+                    <h5><strong>Explore</strong></h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">About Nail Art</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-txt col-6 col-md-4">
+                    <h5><strong>Services</strong></h5>
+                    <ul>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#"> Contact Us</a></li>
+                        <li><a href="#">Feedback Form</a></li>
+                        <li><i class="bi bi-envelope"></i> nailoria@gmail.com</li>
+                        <li><i class="bi bi-geo-alt"></i>Pakistan, Karachi</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-hr">
+            <p class="text-center small mb-0">&copy; 2026 Nailoria Nail Art Studio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- JQUERY LINK -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- BOOTSTRAP JS LINK -->
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="index.js"></script>
+</body>
+
+</html>

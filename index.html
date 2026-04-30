@@ -14,91 +14,95 @@
     <!-- LINK OF GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Parisienne&family=Ramsina&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Parisienne&family=Ramsina&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <header>
-        <div class="header-menu">
-            <!-- Logo-->
-            <div class="nav-logo-container">
-                <div class="header-logo">
-                    <img src="images/Home/header-logo.png" alt="logo">
-                </div>
-                <div class="logo-name">
-                    <img src="images/Home/logo-name.png" alt="logo-name">
+    <!-- NAVBAR -->
+    <header class="header">
+        <!-- Logo-->
+        <div class="nav-logo-container">
+            <div class="header-logo">
+                <img src="images/Home/header-logo.png" alt="logo">
+            </div>
+            <div class="logo-name">
+                <img src="images/Home/logo-name.png" alt="logo-name">
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Toggler button  -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Tabs -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="dropdown-color">
+                                About
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">About Nail Art</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Categories</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Designs
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Designs with Steps</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Care Tips</a>
+                        </li>
+                        <li class="nav-item dropdown nav-contact">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Contact
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="contact.html#feedback-section">Feedback Form</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <!-- Toggler button  -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- Tabs -->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav nav-underline">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false" id="dropdown-color">
-                                    About
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">About Nail Art</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">About Us</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Categories</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Designs
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Designs with Steps</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Gallery</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Products</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Care Tips</a>
-                            </li>
-                            <li class="nav-item dropdown nav-contact">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Contact
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Feedback Form</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section>
         <div class="header-content">
             <div class="head-txt-container">
                 <div class="head-main-txt">
@@ -113,8 +117,9 @@
                 </div>
             </div>
         </div>
-    </header>
-    <div class="work"></div>
+    </section>
+
+    <!-- FOOTER SECTION -->
     <footer>
         <div class="container">
             <div class="row g-4">
@@ -173,9 +178,6 @@
 
     <!-- BOOTSTRAP JS LINK -->
     <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- JS LINK -->
-    <script src="index.js"></script>
 </body>
 
 </html>
