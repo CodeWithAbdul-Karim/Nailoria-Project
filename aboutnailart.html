@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Nailoria</title>
+    <title>About Nail Art - Nailoria</title>
     <!-- CSS LINK -->
     <link rel="stylesheet" href="style.css">
 
@@ -15,15 +15,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Parisienne&family=Ramsina&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fugaz+One&family=Parisienne&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <!-- NAVBAR  -->
-     <header class="header">
+    <!-- NAVBAR -->
+    <header class="header">
         <!-- Logo-->
         <div class="nav-logo-container">
             <div class="header-logo">
@@ -48,16 +48,16 @@
                             <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle  active" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false" id="dropdown-color">
                                 About
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="aboutnailart.html">About Nail Art</a></li>
+                                <li><a class="dropdown-item" href="#">About Nail Art</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -66,7 +66,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Gallery</a>
                         </li>
-                        
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">Products</a>
                         </li>
@@ -74,7 +74,7 @@
                             <a class="nav-link" href="#">Care Tips</a>
                         </li>
                         <li class="nav-item dropdown nav-contact">
-                            <a class="nav-link dropdown-toggle  active" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Contact
                             </a>
@@ -92,99 +92,73 @@
         </nav>
     </header>
 
-    <!-- MAIN -->
-    <main>
-        <!-- CONTACT FORM  -->
-        <section class="contact py-5">
+    <!-- MAIN  -->
+    <main class="about-nail py-5">
+        <!-- MAIN HEADING  -->
+        <div class="main-heading">
+            <h1 class="main-about-head text-center">About Nail Art</h1>
+            <p class="head-para">Discover the history, creativity, and beauty behind nail art.</p>
+        </div>
+
+        <!-- INTRO SEC  -->
+        <section class="aboutnail-intro pb-5">
             <div class="container">
-                <h1 class="text-center">Contact Us</h1>
-                <p class="head-para">Questions or collaborations? Drop us a message.</p>
-                <div class="row mt-3">
-                    <div class="contact-side col-lg-6 mt-3">
-                        <form id="nailoria-form" class="nailoria-contact form-card">
-                            <div class="mb-3">
-                                <label for="name" class="form-label input-field">Name</label>
-                                <input type="text" id="name" class="form-control">
-                                <p class="error text-danger mt-1"></p>
+                <div class="row align-items-center g-5 mt-3">
+                    <div class="col-lg-6">
+                        <h2 class="second-title">Introduction</h2>
+                        <p class="text-muted">Nail art is a creative form of beauty that focuses on decorating and
+                            enhancing the appearance of nails. It involves the use of colors, patterns, and decorative
+                            elements to create unique and stylish designs. Over time, nail art has become an important
+                            part of modern fashion, allowing individuals to express their personality through artistic
+                            nail designs.</p>
+                        <p class="text-muted">Nail art is not only about beauty but also about creativity and
+                            innovation. It reflects changing fashion trends and cultural influences over time.</p>
+                        <div class="row text-center mt-4 nail-info">
+                            <div class="col-4">
+                                <h3 class="text-pink">5K+</h3>
+                                <small class="text-muted">Years of history</small>
                             </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label input-field">Email</label>
-                                <input type="text" id="email" class="form-control">
-                                <p class="error text-danger mt-1"></p>
+                            <div class="col-4">
+                                <h3 class="text-pink">200+</h3>
+                                <small class="text-muted">Tutorials</small>
                             </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label input-field">Password</label>
-                                <input type="password" id="password" class="form-control">
-                                <p class="error text-danger mt-1"></p>
+                            <div class="col-4">
+                                <h3 class="text-pink">50+</h3>
+                                <small class="text-muted">Techniques</small>
                             </div>
-                            <div class="mb-3">
-                                <label for="comment" class="mb-2">Message</label>
-                                <textarea class="form-control input-field" rows="5" id="comment" name="text"></textarea>
-                                <p class="error text-danger mt-1"></p>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100">Submit</button>
-                            <div class="alert alert-success mt-3 d-none" id="successAlert">
-                                Thanks! Your message is sent.
-                            </div>
-                        </form>
-                    </div>
-                    <div class="map-side col-lg-6 mt-3">
-                        <div class="map-container">
-                            <iframe class="map-iframe" title="Nailoria Studio Location Map"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1451.8953794316344!2d67.06794498441097!3d24.931856692370687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f684c7c5235%3A0xaa5aecef73222b2c!2sPlot%20B%2016%2C%20Block%2010%20Gulberg%20Town%2C%20Karachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1777570299334!5m2!1sen!2s"
-                                width="100%" height="580px" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
-
+                    <div class="col-lg-6">
+                        <img src="images/About/aboutnailart/faceart.jpg" alt="" class="img-fluid rounded-4 shadow-soft">
+                    </div>
                 </div>
-            </div>
             </div>
         </section>
 
-        <!-- FEEDBACK FORM -->
-        <section class="feedback py-5" id="feedback-section">
+        <!-- ORIGIN SEC -->
+        <section class="originOfnail py-5">
             <div class="container">
-                <h1 class="text-center">Share Your Feedback</h1>
-                <p class="head-para">Help us improve — tell us what you love or what we can do better.</p>
-                <form id="feedback-form" class="form-card mx-auto mt-4">
-                    <div class="row">
-                        <div class="col-md-6 mt-1">
-                            <label for="f-name" class="form-label input-field">Name</label>
-                            <input type="text" id="f-name" class="form-control">
-                            <p class="error text-danger mt-1"></p>
-                        </div>
-                        <div class="col-md-6 mt-1">
-                            <label for="f-email" class="form-label input-field">Email</label>
-                            <input type="text" id="f-email" class="form-control">
-                            <p class="error text-danger mt-1"></p>
-                        </div>
-                        <div class="col-md-12 mt-1">
-                            <label for="rating" class="form-label input-field">Rating</label>
-                            <select id="rating" class="form-select">
-                                <option value="" selected disabled>Select your rating...</option>
-                                <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
-                                <option value="4">⭐⭐⭐⭐ Good</option>
-                                <option value="3">⭐⭐⭐ Average</option>
-                                <option value="2">⭐⭐ Poor</option>
-                                <option value="1">⭐ Very Poor</option>
-                            </select>
-                            <p class="error text-danger mt-1"></p>
-                        </div>
-                        <div class="col-md-12 mt-1">
-                            <label for="feedback" class="mb-2">Your feedback</label>
-                            <textarea class="form-control input-field" rows="5" id="feedback" name="text"></textarea>
-                            <p class="error text-danger mt-1"></p>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100" id="submit-change-color">Submit</button>
-                        <div class="alert alert-success mt-3 d-none" id="f-successAlert">
-                            Thanks for your feedback.
+                <div class="origin-head-con">
+                    <h1 class="first-title text-center">Origin Of Nail Art</h1>
+                    <p class="head-para text-muted text-center">Nail art has a rich history that dates back thousands of
+                        years. <br> let's take a look at how it all began.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </section>
     </main>
-
     <!-- FOOTER SECTION -->
     <footer>
         <div class="container">
@@ -238,15 +212,11 @@
         </div>
     </footer>
 
-
     <!-- JQUERY LINK -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- BOOTSTRAP JS LINK -->
     <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- CUSTOM JS -->
-    <script src="index.js"></script>
 </body>
 
 </html>

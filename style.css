@@ -1,3 +1,22 @@
+/* STORED VALUES */
+.first-title{
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+}
+.second-title{
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  margin-bottom: .8rem;
+  font-family: 'Playfair Display';
+}
+
+.text-pink{
+  color: #ff4f87;
+}
+
+.head-para{
+  font-size: clamp(10px, 3vw, 16px);
+}
+
 body {
   font-family: sans-serif !important;
 }
@@ -268,11 +287,12 @@ footer ul li i {
 
 /* CONTACT PAGE CSS */
 /* CONTACT SECTION START */
-.contact{
-    background: linear-gradient(to right,
+.contact {
+  background: linear-gradient(to right,
       rgba(255, 255, 255, 0.9),
       rgba(255, 182, 193, 0.6));
 }
+
 .contact .container h1 {
   font-family: "Dancing Script", cursive;
   font-size: clamp(2.2rem, 5vw, 3.2rem);
@@ -333,6 +353,7 @@ footer ul li i {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   border: 0;
 }
+
 /* CONTACT SECTION END */
 
 
@@ -367,7 +388,7 @@ footer ul li i {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.feedback form button:hover{
+.feedback form button:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 22px -8px rgba(255, 79, 135, .55);
   background-color: #fd548c;
@@ -390,17 +411,57 @@ footer ul li i {
   box-shadow: 0 0 0 .2rem rgba(255, 122, 166, .18);
 }
 
-.feedback form #submit-change-color:active{
+.feedback form #submit-change-color:active {
   background-color: #fd548c;
 }
-/* FEEDBACK SECTION END */
 
+/* FEEDBACK SECTION END */
+/* CONTACT PAGE CSS END*/
+
+
+/* ABOUT NAIL ART PAGE CSS */
+
+.about-nail .main-heading h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+}
+
+.about-nail .main-heading p {
+  color: #6b6175;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+/* SECTION INTRO */
+.aboutnail-intro{
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 182, 193, 0.6));
+}
+
+.aboutnail-intro .nail-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.aboutnail-intro .container p{
+  text-align: justify;
+  font-size: 16px;
+}
+/* SECTION INTRO END*/
+
+/* ORIGIN OF NAIL ART SECTION  */
+
+/* ORIGIN SEC END */
+
+
+/* ABOUT NAIL ART PAGE CSS END*/
 
 
 
 
 
 /* MEDIA QUERY */
+/* NAVBAR  */
 @media (max-width: 991px) {
   .navbar .nav {
     flex-direction: column;
@@ -441,4 +502,6 @@ footer ul li i {
     background-size: cover;
     background-position: 75% center;
   }
+/* HEADER SEC END*/
+
 }
