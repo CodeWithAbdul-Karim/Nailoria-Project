@@ -584,6 +584,23 @@ footer ul li i {
 /* EVOLUTION SEC END */
 /* ABOUT NAIL ART PAGE CSS END*/
 
+/* ABOUT US PAGE */
+.aboutus .main-heading h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+}
+
+.aboutus .main-heading p {
+  color: #6b6175;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.aboutus .aboutus-section1 img{
+  width: 500px;
+}
+/* ABOUT US PAGE END */
+
 
 
 
