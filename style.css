@@ -35,16 +35,11 @@ header {
   z-index: 1000;
   top: 0;
   background-color: whitesmoke;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-item .nav-link {
   color: #555;
-  border-bottom: 2px solid #ff7aa6;
   font-size: 16px;
 }
 
@@ -64,17 +59,6 @@ header .nav-logo-container .header-logo img {
 
 header .nav-logo-container .logo-name img {
   width: clamp(110px, 15vw, 140px);
-}
-
-header .navbar .container-fluid {
-  justify-content: flex-end;
-}
-
-.navbar .nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
 }
 
 .nav .dropdown:hover .dropdown-menu {
@@ -97,7 +81,7 @@ header .navbar .container-fluid {
 .nav-item>a:focus,
 .nav-item:hover>a {
   color: black;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #ff7aa6;
 }
 
 .nav .nav-contact {
@@ -112,8 +96,22 @@ header .navbar .container-fluid {
   border: none;
 }
 
+nav .nav-underline {
+  gap: 20px;
+}
+
 .nav .nav-contact:hover {
   background-color: #fd548c;
+}
+
+.nav-underline .nav-link:focus,
+.nav-underline .nav-link:hover{
+  border-bottom-color: #ff7aa6 !important;
+}
+
+.nav-underline .nav-link.active,
+.nav-underline .show> .nav-link{
+  border-bottom-color: #ff7aa6 !important;
 }
 
 
@@ -222,6 +220,7 @@ footer .footer-txt ul li a:hover {
 
 footer .footer-txt ul li {
   padding-bottom: .5rem;
+  color: #f0e6ec;
 }
 
 footer .footer-txt ul img {
@@ -293,49 +292,43 @@ footer ul li i {
 
 
 /* CONTACT PAGE CSS */
-/* CONTACT SECTION START */
-.contact-feedback .hero-sec {
-  position: relative;
-  background-image: url(images/contact/banner.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background-position: right;
+/* ADDRESS SEC*/
+.address-contact .container .portions {
+  width: 250px;
 }
 
-.contact-feedback .hero-sec::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to right, rgb(0 0 0 / 31%), rgb(0 0 0 / 28%));
+.address-contact .container .right-border {
+border-right: 1px solid #55555555;
 }
 
-.contact-feedback .hero-sec .main-heading {
-  color: white;
-  position: relative;
-  z-index: 2;
+.address-contact .container .portions i {
+  color: #ff7aa6;
+  font-size: 50px;
 }
 
-.contact-feedback .hero-sec .main-heading h1 {
-  font-family: 'Playfair Display';
-  font-size: clamp(2.2rem, 5vw, 3.2rem);
+.address-contact .container .portions h1 {
+  margin: 1rem 0;
+  font-family: "Dancing Script", cursive;
 }
 
-.contact-feedback .hero-sec .main-heading h1 span {
-  font-style: italic;
-  color: lightyellow;
+.address-contact .container .portions p:nth-child(4){
+  color: #ff7aa6;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-.contact-feedback .hero-sec .main-heading p {
-  font-weight: bolder;
-  text-align: center;
-  margin-top: 1.5rem;
+.address-contact .container .portions a{
+  color: #ff7aa6;
+  text-decoration: none;
+  transition: all .2s;
 }
 
+.address-contact .container .portions a:hover{
+  color: #ff558e;
+}
+/* ADDRESS SEC END */
+
+/* CONTACT FORM */
 .contact-feedback .contact {
   background: linear-gradient(to right,
       rgba(255, 255, 255, 0.9),
@@ -393,8 +386,53 @@ footer ul li i {
 }
 
 /* CONTACT SECTION END */
+/* CONTACT PAGE CSS END*/
 
+/* BOTH HERO SEC  */
+.contact-feedback .hero-sec {
+  position: relative;
+  background-image: url(images/contact/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-position: center;
+}
 
+.contact-feedback .hero-sec::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgb(0 0 0 / 31%), rgb(0 0 0 / 28%));
+}
+
+.contact-feedback .hero-sec .main-heading {
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-feedback .hero-sec .main-heading h1 {
+  font-family: 'Playfair Display';
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+}
+
+.contact-feedback .hero-sec .main-heading h1 span {
+  font-style: italic;
+  color: lightyellow;
+}
+
+.contact-feedback .hero-sec .main-heading p {
+  font-weight: bolder;
+  margin-top: 1.5rem;
+}
+
+/* BOTH HERO SEC  END*/
+
+/* FEEDBACK PAGE CSS START*/
 /* FEEDBACK SECTION START */
 
 .feedback .container h1 {
@@ -454,7 +492,7 @@ footer ul li i {
 }
 
 /* FEEDBACK SECTION END */
-/* CONTACT PAGE CSS END*/
+/* FEEDBACK PAGE CSS END*/
 
 
 /* ABOUT NAIL ART PAGE CSS */
@@ -791,7 +829,7 @@ footer ul li i {
 
 /* MEDIA QUERY */
 /* NAVBAR  */
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .navbar .nav {
     flex-direction: column;
     width: 100%;
@@ -800,6 +838,39 @@ footer ul li i {
   .navbar .nav-link {
     padding: 10px 0;
   }
+  .nav .nav-contact {
+  background-color: whitesmoke;
+  border-radius: 0;
+  padding: 0;
+  transition: .3s;
+}
+
+.nav .nav-contact>a {
+  color: #555;
+}
+
+.nav .nav-contact:hover {
+  background-color: whitesmoke;
+}
+
+.nav-item>a:focus,
+.nav-item:hover>a {
+  color: black;
+  border-bottom: 2px solid #ff7aa6;
+}
+
+.nav-underline .nav-link:focus,
+.nav-underline .nav-link:hover{
+  border-bottom: 2px solid #ff7aa6;
+  border-bottom-color: #ff7aa6 !important;
+}
+
+.nav-underline .nav-link.active,
+.nav-underline .show> .nav-link{
+  border-bottom: 2px solid #ff7aa6;
+  border-bottom-color: #ff7aa6 !important;
+}
+
 }
 
 /* HEADER SEC  */
