@@ -105,12 +105,12 @@ nav .nav-underline {
 }
 
 .nav-underline .nav-link:focus,
-.nav-underline .nav-link:hover{
+.nav-underline .nav-link:hover {
   border-bottom-color: #ff7aa6 !important;
 }
 
 .nav-underline .nav-link.active,
-.nav-underline .show> .nav-link{
+.nav-underline .show>.nav-link {
   border-bottom-color: #ff7aa6 !important;
 }
 
@@ -129,7 +129,6 @@ nav .nav-underline {
   background-position: center right;
   background-size: cover;
   background-repeat: no-repeat;
-
   box-sizing: border-box;
 }
 
@@ -298,7 +297,7 @@ footer ul li i {
 }
 
 .address-contact .container .right-border {
-border-right: 1px solid #55555555;
+  border-right: 1px solid #55555555;
 }
 
 .address-contact .container .portions i {
@@ -311,21 +310,22 @@ border-right: 1px solid #55555555;
   font-family: "Dancing Script", cursive;
 }
 
-.address-contact .container .portions p:nth-child(4){
+.address-contact .container .portions p:nth-child(4) {
   color: #ff7aa6;
   font-weight: bold;
   font-size: 18px;
 }
 
-.address-contact .container .portions a{
+.address-contact .container .portions a {
   color: #ff7aa6;
   text-decoration: none;
   transition: all .2s;
 }
 
-.address-contact .container .portions a:hover{
+.address-contact .container .portions a:hover {
   color: #ff558e;
 }
+
 /* ADDRESS SEC END */
 
 /* CONTACT FORM */
@@ -551,6 +551,7 @@ border-right: 1px solid #55555555;
 }
 
 .aboutnail-intro .container p {
+  line-height: 1.6rem;
   text-align: justify;
   font-size: 16px;
 }
@@ -750,7 +751,8 @@ border-right: 1px solid #55555555;
   object-fit: cover;
 }
 
-.aboutus .aboutus-section1 p {
+.aboutus-section1 p {
+  text-align: justify;
   line-height: 1.7rem;
 }
 
@@ -799,29 +801,77 @@ border-right: 1px solid #55555555;
   color: #e71db1;
 }
 
-.aboutus-section3 .text-aboutus {
+.text-aboutus {
   min-width: 0;
 }
 
 
-.aboutus-section3 .reasons .text-aboutus h6 {
+.reasons .text-aboutus h6 {
   font-weight: 900;
 
 }
 
-.aboutus-section3 .reasons .text-aboutus p {
+.reasons .text-aboutus p {
   max-width: 240px;
 }
 
-.aboutus-section3 .text-aboutus p {
+.text-aboutus p {
   margin: 0;
   overflow-wrap: break-word;
 }
 
-
 /* ABOUT US PAGE END */
 
 
+/* HOME PAGE SECTIONS */
+/* ABOUT NAIL ART  */
+.sec-btn {
+  background-color: #fe699b;
+  border-radius: 0 25px;
+  padding: 12px 14px;
+  transition: .3s;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  /* font-size: clamp(0.9rem, 1.5vw, 1rem); */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sec-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px -8px rgba(255, 79, 135, .55);
+  background-color: #fd548c;
+}
+
+.span-color {
+  color: #e71db1;
+}
+
+.home .aboutnail-intro {
+  background: white;
+}
+
+.home .aboutnail-intro img {
+  width: 400px;
+}
+
+/* ABOUT NAIL ART  END*/
+
+/* ABOUT US  */
+.aboutus-section1 .aboutus-aside img {
+  width: 450px;
+  border-radius: 50px;
+  /* width: 500px; */
+  /* max-height: 560px; */
+  object-fit: cover;
+}
+
+.aboutus-section1 h2 {
+  font-family: 'Playfair Display';
+}
+/* ABOUT US END */
 
 
 
@@ -838,38 +888,39 @@ border-right: 1px solid #55555555;
   .navbar .nav-link {
     padding: 10px 0;
   }
+
   .nav .nav-contact {
-  background-color: whitesmoke;
-  border-radius: 0;
-  padding: 0;
-  transition: .3s;
-}
+    background-color: whitesmoke;
+    border-radius: 0;
+    padding: 0;
+    transition: .3s;
+  }
 
-.nav .nav-contact>a {
-  color: #555;
-}
+  .nav .nav-contact>a {
+    color: #555;
+  }
 
-.nav .nav-contact:hover {
-  background-color: whitesmoke;
-}
+  .nav .nav-contact:hover {
+    background-color: whitesmoke;
+  }
 
-.nav-item>a:focus,
-.nav-item:hover>a {
-  color: black;
-  border-bottom: 2px solid #ff7aa6;
-}
+  .nav-item>a:focus,
+  .nav-item:hover>a {
+    color: black;
+    border-bottom: 2px solid #ff7aa6;
+  }
 
-.nav-underline .nav-link:focus,
-.nav-underline .nav-link:hover{
-  border-bottom: 2px solid #ff7aa6;
-  border-bottom-color: #ff7aa6 !important;
-}
+  .nav-underline .nav-link:focus,
+  .nav-underline .nav-link:hover {
+    border-bottom: 2px solid #ff7aa6;
+    border-bottom-color: #ff7aa6 !important;
+  }
 
-.nav-underline .nav-link.active,
-.nav-underline .show> .nav-link{
-  border-bottom: 2px solid #ff7aa6;
-  border-bottom-color: #ff7aa6 !important;
-}
+  .nav-underline .nav-link.active,
+  .nav-underline .show>.nav-link {
+    border-bottom: 2px solid #ff7aa6;
+    border-bottom-color: #ff7aa6 !important;
+  }
 
 }
 
