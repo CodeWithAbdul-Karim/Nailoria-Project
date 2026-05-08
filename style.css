@@ -61,10 +61,6 @@ header .nav-logo-container .logo-name img {
   width: clamp(110px, 15vw, 140px);
 }
 
-.nav .dropdown:hover .dropdown-menu {
-  display: block;
-}
-
 .nav .dropdown:hover .dropdown-menu li>a {
   transition: .1s;
 }
@@ -119,20 +115,27 @@ nav .nav-underline {
 
 /* HERO SECTION */
 .header-content {
-  display: flex;
   position: relative;
-  overflow: hidden;
+  background-image: url(images/Home/header-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+  display: flex;
   align-items: center;
   width: 100%;
-  min-height: calc(100vh - 75px);
-  background: linear-gradient(rgba(255, 182, 193, 0.5), rgba(255, 255, 255, 0.1)), url(images/Home/header-img.png);
-  background-position: center right;
-  background-size: cover;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
+  background-position: center;
+}
+
+.header-content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgb(0 0 0 / 31%), rgb(0 0 0 / 28%));
 }
 
 .head-txt-container {
+  position: relative;
+  z-index: 500;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -140,24 +143,23 @@ nav .nav-underline {
   justify-content: center;
 }
 
-.head-txt-container .head-main-txt {
-  font-size: clamp(2.2rem, 5vw, 3.2rem);
-  color: black;
-  font-weight: 800;
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-style: normal;
-  border-bottom: 6px solid #a94438;
+.head-txt-container .head-main-txt .first-title {
+  color: white;
+  font-family: 'Playfair Display';
   border-radius: 10px;
 }
-
-
+.head-txt-container .head-main-txt .first-title span{
+  color: lightyellow;
+}
 
 .header-content .head-sub-txt {
+  color: white;
+  font-weight: bolder;
   display: flex;
   max-width: 600px;
-  color: #2b2230;
-  font-size: clamp(0.9rem, 2vw, 1.1rem);
+}
+.header-content .head-sub-txt {
+  line-height: 1.7rem;
 }
 
 .head-txt-container .head-btn a {
@@ -170,7 +172,6 @@ nav .nav-underline {
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  font-size: clamp(0.9rem, 1.5vw, 1rem);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -417,7 +418,6 @@ footer ul li i {
 
 .contact-feedback .hero-sec .main-heading h1 {
   font-family: 'Playfair Display';
-  font-size: clamp(2.2rem, 5vw, 3.2rem);
 }
 
 .contact-feedback .hero-sec .main-heading h1 span {
@@ -434,11 +434,6 @@ footer ul li i {
 
 /* FEEDBACK PAGE CSS START*/
 /* FEEDBACK SECTION START */
-
-.feedback .container h1 {
-  font-family: "Dancing Script", cursive;
-  font-size: clamp(2.2rem, 5vw, 3.2rem);
-}
 
 .feedback .container>p {
   color: #6b6175;
@@ -525,7 +520,6 @@ footer ul li i {
 
 .about-nail .main-heading h1 {
   font-family: 'Playfair Display';
-  font-size: clamp(2.2rem, 5vw, 3.2rem);
 }
 
 .about-nail .main-heading h1 span {
@@ -570,14 +564,10 @@ footer ul li i {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
   width: 40px;
   height: 40px;
-
   background-color: #ff7aa6;
-  /* pink */
   color: #fff;
-
   border-radius: 50%;
   font-weight: bold;
 }
@@ -727,7 +717,6 @@ footer ul li i {
 
 .aboutus .hero-sec .main-heading h1 {
   font-family: 'Playfair Display';
-  font-size: clamp(2.2rem, 5vw, 3.2rem);
 }
 
 .aboutus .hero-sec .main-heading h1 span {
@@ -777,6 +766,7 @@ footer ul li i {
 }
 
 .aboutus-section2 .row .MV-card h3 {
+  font-family: 'Playfair Display';
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -835,7 +825,6 @@ footer ul li i {
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  /* font-size: clamp(0.9rem, 1.5vw, 1rem); */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -863,14 +852,13 @@ footer ul li i {
 .aboutus-section1 .aboutus-aside img {
   width: 450px;
   border-radius: 50px;
-  /* width: 500px; */
-  /* max-height: 560px; */
   object-fit: cover;
 }
 
-.aboutus-section1 h2 {
+.home .aboutus-section1 h2 {
   font-family: 'Playfair Display';
 }
+
 /* ABOUT US END */
 
 
@@ -879,6 +867,12 @@ footer ul li i {
 
 /* MEDIA QUERY */
 /* NAVBAR  */
+@media (min-width: 992px) {
+  .navbar .nav-item.dropdown:hover .dropdown-menu {
+    display: block !important;
+  }
+}
+
 @media (max-width: 992px) {
   .navbar .nav {
     flex-direction: column;
@@ -945,15 +939,10 @@ footer ul li i {
   }
 }
 
-@media (max-width: 768px) {
-  .header-content {
-    background:
-      linear-gradient(rgba(255, 182, 193, 0.7), rgba(255, 255, 255, 0.3)),
-      url(images/Home/header-img.png);
-    background-size: cover;
-    background-position: 75% center;
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
   }
-
-  /* HEADER SEC END*/
-
 }
+
+/* HEADER SEC END*/
