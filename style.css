@@ -148,7 +148,8 @@ nav .nav-underline {
   font-family: 'Playfair Display';
   border-radius: 10px;
 }
-.head-txt-container .head-main-txt .first-title span{
+
+.head-txt-container .head-main-txt .first-title span {
   color: lightyellow;
 }
 
@@ -158,6 +159,7 @@ nav .nav-underline {
   display: flex;
   max-width: 600px;
 }
+
 .header-content .head-sub-txt {
   line-height: 1.7rem;
 }
@@ -435,6 +437,52 @@ footer ul li i {
 /* FEEDBACK PAGE CSS START*/
 /* FEEDBACK SECTION START */
 
+/* REVIEWS SLIDER  */
+.reviews .reviewSlider {
+  padding-bottom: 60px;
+}
+
+.reviews .swiper-button-next,
+.swiper-button-prev {
+  top: auto;
+  bottom: 0;
+  color: #000;
+}
+
+.reviews .swiper-button-prev {
+  top: auto;
+  padding: 1.5rem;
+  background-color: #fe699b;
+  color: white;
+  transition: .3s;
+  font-weight: bolder;
+  border-radius: 50%;
+}
+
+.reviews .swiper-button-prev:hover {
+  transform: translateY(-2px);
+  background-color: #fd548c;
+}
+
+.reviews .swiper-button-next {
+  padding: 1.5rem;
+  background-color: #fe699b;
+  color: white;
+  transition: .3s;
+  font-weight: bolder;
+  border-radius: 50%;
+}
+
+.reviews .swiper-button-next:hover {
+  transform: translateY(-2px);
+  background-color: #fd548c;
+}
+
+.reviews .swiper-button-next:after,
+.reviews .swiper-button-prev:after {
+  font-size: 1rem;
+}
+/* SLIDER END  */
 .feedback .container>p {
   color: #6b6175;
   text-align: center;
