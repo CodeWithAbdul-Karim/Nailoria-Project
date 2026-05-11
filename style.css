@@ -339,7 +339,7 @@ footer ul li i {
 }
 
 .form-card {
-    max-width: 640px;
+  max-width: 640px;
   background: #fff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   border-radius: 22px;
@@ -383,7 +383,14 @@ footer ul li i {
 }
 
 /* MAP  */
+.map-container {
+  height: 100%;
+  min-height: 380px;
+}
+
 .map-container iframe {
+  height: 100%;
+  min-height: 380px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   border: 0;
