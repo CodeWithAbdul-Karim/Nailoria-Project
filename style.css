@@ -187,7 +187,6 @@ nav .nav-underline {
 
 /* FOOTER SEC START */
 footer {
-  /* background-image: url(images/team-img-extra/footer/footer-bg.png); */
   background: linear-gradient(160deg, #2b2230, #3d2a3a);
   color: white;
   width: 100%;
@@ -443,7 +442,6 @@ footer ul li i {
 /* BOTH HERO SEC  END*/
 
 /* FEEDBACK PAGE CSS START*/
-/* FEEDBACK SECTION START */
 
 /* REVIEWS SLIDER  */
 .reviews .reviewSlider {
@@ -489,6 +487,10 @@ footer ul li i {
 .reviews .swiper-button-next:after,
 .reviews .swiper-button-prev:after {
   font-size: 1rem;
+}
+
+.reviews .container .review-cards{
+  min-height: 190px;
 }
 
 /* SLIDER END  */
@@ -539,6 +541,7 @@ footer ul li i {
 .feedback form #submit-change-color:active {
   background-color: #fd548c;
 }
+
 
 /* FEEDBACK SECTION END */
 /* FEEDBACK PAGE CSS END*/
