@@ -110,6 +110,72 @@ nav .nav-underline {
   border-bottom-color: #ff7aa6 !important;
 }
 
+/* TOGGLER BUTTON */
+.custom-toggler {
+  border: none;
+  box-shadow: none !important;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background: transparent;
+}
+
+.custom-toggler span {
+  position: absolute;
+  left: 5px;
+  width: 30px;
+  height: 3px;
+  background: #fd548c;
+  border-radius: 10px;
+  transition: 0.4s ease;
+}
+
+.custom-toggler span:nth-child(1) {
+  top: 10px;
+}
+
+.custom-toggler span:nth-child(2) {
+  top: 18px;
+}
+
+.custom-toggler span:nth-child(3) {
+  top: 26px;
+}
+
+.custom-toggler.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 18px;
+}
+
+.custom-toggler.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.custom-toggler.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 18px;
+}
+
+.custom-toggler {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+.navbar-collapse {
+  transition: all 0.4s ease-in-out;
+}
+
+.navbar-collapse.collapsing {
+  opacity: 0;
+  transform: translateY(-15px);
+}
+
+.navbar-collapse.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* NAVBAR END */
 
@@ -489,7 +555,7 @@ footer ul li i {
   font-size: 1rem;
 }
 
-.reviews .container .review-cards{
+.reviews .container .review-cards {
   min-height: 190px;
 }
 
@@ -1092,6 +1158,11 @@ footer ul li i {
   .nav-underline .show>.nav-link {
     border-bottom: 2px solid #ff7aa6;
     border-bottom-color: #ff7aa6 !important;
+  }
+
+    .navbar-collapse {
+    padding: 15px;
+    margin-top: 10px;
   }
 
 }
