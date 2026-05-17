@@ -97,11 +97,12 @@ $(document).ready(function () {
         }
     });
 
-    // NAVBAR
-    // const toggler = document.querySelector(".custom-toggler");
-
-    // toggler.addEventListener("click", function () {
-    //     this.classList.toggle("active");
-    // });
+    //   NAVBAR
+        const toggler = document.querySelector(".custom-toggler");
+    
+        toggler.addEventListener("click", function () {
+            this.classList.toggle("active");
+        });
 });
+
 
