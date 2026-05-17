@@ -5,12 +5,95 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nail Art Categories</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="common.css">
 <link rel="stylesheet" href="categories.css">
+<link rel="stylesheet" href="Navbar.css">
+<link rel="stylesheet" href="footer.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
 
 </head>
 <body>
+
+ <!-- NAVBAR -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Logo-->
+                <div class="nav-logo-container">
+                    <div class="header-logo">
+                        <img src="header-logo.png" alt="logo">
+                    </div>
+                    <div class="logo-name">
+                        <img src="logo-name.png" alt="logo-name">
+                    </div>
+                </div>
+
+                
+                <!-- Toggler button  -->
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+
+
+                <!-- Tabs -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav nav-underline ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="dropdown-color">
+                                About
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="aboutnailart.html">About Nail Art</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Designs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Gallery.html">Gallery</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Care Tips</a>
+                        </li>
+                        <li class="nav-item dropdown nav-contact">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Contact
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="feedback.html">Feedback Form</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> 
 
 <h1 class="text-center mt-4">Nail Art Categories</h1>
 
@@ -47,15 +130,15 @@
         </div>
 
         <div class="card-body text-center">
-          <h3 class="card-title">Smiley Face Nails</h3>
+          <h3 class="card-title">Playful Yellow Smiley Face Nail Art</h3>
 
-          <p class="card-text">
+          <!-- <p class="card-text">
             Simple happy smiley face design, cute and beginner-friendly.
-          </p>
+          </p> -->
           <p class="text-muted">This is a trendy smiley-face nail art design. It features a clean, milky nude base decorated with bright yellow emojis, 
             tiny black hearts, and gold stars. The look is paired with minimalist gold rings for a fun, aesthetic, and modern vibe.</p>
 
-          <a href="#" class="btn view-btn mt-3">View</a>
+          <a href="view1.html" class="btn view-btn mt-3">View</a>
         </div>
 
       </div>
@@ -71,17 +154,17 @@
 
         <div class="card-body text-center">
           <h3 class="card-title">Cute Emoji Nails</h3>
-
+<!-- 
           <p class="card-text">
             Different emoji faces for a fun and colorful playful look.
-          </p>
+          </p> -->
           <p class="text-muted">
             This is a colorful pastel emoji nail art set. Each nail features a different soft shade
              (mint, blue, pink, purple) decorated with 3D-style emojis, glitter, and tiny rhinestones. 
              It is a fun, vibrant, and playful Y2K-inspired look.
           </p>
 
-          <a href="#" class="btn view-btn mt-3">View</a>
+          <a href="view2.html" class="btn view-btn mt-3">View</a>
         </div>
 
       </div>
@@ -104,7 +187,7 @@
           <p class="text-muted">This is a whimsical pastel animal nail art design. It features adorable cartoon 
               illustrations of a fox, cat, bunny, owl, and bird on different soft-colored bases. The look is creative, sweet, and highly detailed.</p>
 
-          <a href="#" class="btn view-btn mt-3">View</a>
+          <a href="view3.html" class="btn view-btn mt-3">View</a>
         </div>
 
       </div>
@@ -130,18 +213,18 @@
         </div>
 
         <div class="card-body text-center">
-          <h3 class="card-title">Smiley Face Nails</h3>
+          <h3 class="card-title">Elegant Nude & Gold Flake Face Design</h3>
 
-          <p class="card-text">
+          <!-- <p class="card-text">
             Simple happy smiley face design, cute and beginner-friendly.
-          </p>
+          </p> -->
           <p class="text-muted">
             This is an artistic abstract line-art nail design. It features a soft nude base 
             with delicate black face outlines and elegant gold foil accents. Its
              a minimalist, modern, and sophisticated look.
           </p>
 
-          <a href="#" class="btn view-btn mt-3">View</a>
+          <a href="view4.html" class="btn view-btn mt-3">View</a>
         </div>
 
       </div>
@@ -157,18 +240,18 @@
         </div>
 
         <div class="card-body text-center">
-          <h3 class="card-title">Smiley Face Nails</h3>
+          <h3 class="card-title">Royal Burgundy Cat-Eye & Gold Filigree Art</h3>
 
-          <p class="card-text">
+          <!-- <p class="card-text">
             Simple happy smiley face design, cute and beginner-friendly.
-          </p>
+          </p> -->
           <p class="text-muted">
             This is a luxurious burgundy cat-eye nail design. It features a shimmering magnetic finish,
              intricate gold filigree patterns, and sparkling rhinestone accents. It is 
              an elegant, regal, and sophisticated look.
           </p>
 
-          <a href="#" class="btn view-btn mt-3">View</a>
+          <a href="view5.html" class="btn view-btn mt-3">View</a>
         </div>
 
       </div>
@@ -185,23 +268,92 @@
         </div>
 
         <div class="card-body text-center">
-          <h3 class="card-title">Smiley Face Nails</h3>
+          <h3 class="card-title">Matte Black Minimalist Face Line Art</h3>
 
-          <p class="card-text">
+          <!-- <p class="card-text">
             Simple happy smiley face design, cute and beginner-friendly.
-          </p>
+          </p> -->
           <p class="text-muted">
             This is a bold matte black nail design featuring a smooth velvet finish.
              It is accented with minimalist white line-art faces for an edgy,
               modern, and artistic aesthetic.
           </p>
 
-          <a href="#" class="btn view-btn mt-3">View</a>
+          <a href="view6.html" class="btn view-btn mt-3">View</a>
         </div>
 
       </div>
     </div>
 
+<footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="footer-txt col-md-4">
+                    <div class="footer-logo-con">
+                        <div class="footer-logo"><img src="header-logo.png" alt="logo">
+                        </div>
+                        <div class="footer-logo-name"><img src="logo-name.png"
+                                alt="logo-name"></div>
+                    </div>
+                    <p>Designs that tell your story — tutorials, products and care for every nail lover.</p>
+                    <div class="social-icons">
+                        <div class="all-icon whatsapp-icon">
+                            <a href="https://wa.me/923022223331" target="_blank" rel="noopener noreferrer">
+                                <img src="Whatsapp.png" alt="whatsapp-icon">
+                            </a>
+                        </div>
+                        <div class="all-icon youtube-icon">
+                            <a href="https://www.youtube.com/@NailoriaNailArtStudio" target="_blank"
+                                rel="noopener noreferrer"><img src="youtube.png"
+                                    alt="youtube-icon"></a>
+                        </div>
+                        <div class="all-icon instagram-icon">
+                            <a href="https://www.instagram.com/nailorianailartstudio/" target="_blank"
+                                rel="noopener noreferrer"><img src="instagram.png"
+                                    alt="instagram-icon"></a>
+                        </div>
+                        <div class="all-icon facebook-icon">
+                            <a href="https://www.facebook.com/nailorianailartstudio/" target="_blank"
+                                rel="noopener noreferrer"><img src="facebook.png"
+                                    alt="facebook-icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-txt col-6 col-md-4">
+                    <h5><strong>Explore</strong></h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="aboutnailart.html">About Nail Art</a></li>
+                        <li><a href="#">Designs</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-txt col-6 col-md-4">
+                    <h5><strong>Services</strong></h5>
+                    <ul>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="contact.html"> Contact Us</a></li>
+                        <li><a href="feedback.html">Feedback Form</a></li>
+                        <li>
+                            <i class="bi bi-envelope"></i>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nailorianailartstudio@gmail.com"
+                                target="_blank" rel="noopener noreferrer">
+                                Email Us
+                            </a>
+                        </li>
+                        <li><i class="bi bi-geo-alt"></i>FB Area Block 10, Karachi</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-hr">
+            <p class="text-center small mb-0">&copy; 2026 Nailoria Nail Art Studio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="navbar.js"></script>
 
 </body>
 </html>

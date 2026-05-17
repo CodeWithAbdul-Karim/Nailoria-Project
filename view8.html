@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nail Art Categories</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nails Web</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="common.css">
-<link rel="stylesheet" href="categories.css">
-<link rel="stylesheet" href="Navbar.css">
-<link rel="stylesheet" href="footer.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="view.css">
+   <link rel="stylesheet" href="Navbar.css">
+  <link rel="stylesheet" href="footer.css">
 </head>
+
 <body>
 
 
-
-  <!-- NAVBAR -->
+   <!-- NAVBAR -->
     <header class="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -97,107 +94,70 @@
         </nav>
     </header> 
 
+<div class="container main">
+  <div class="row align-items-center">
 
-  
-<h1 class="text-center mt-4">Nail Art Categories</h1>
-
-<!-- FILTER BUTTONS -->
-<div class="filter-btns text-center mb-4">
-
-  <a href="categories.html" class="btn btn-outline-secondary m-1">All</a>
-
-  <a href="face.html" class="btn btn-outline-secondary m-1">Face Designs</a>
-  
-    <a href="geometric.html" class="btn btn-outline-danger m-1">Geometric Designs</a>
-  
-  <a href="#" class="btn btn-outline-primary m-1">Floral Designs</a>
-  
-
-
-  <a href="glitter.html" class="btn btn-outline-warning m-1">Glitter Designs</a>
-
-  <a href="abstract.html" class="btn btn-outline-success m-1">Abstract Designs</a>
-
-</div>
-
-
-
-
-<!-- Easy Designs -->
-
-<div class="container py-5">
-  <h1 class="text-center">Easy Designs</h1>
-
-  <div class="row  g-5 justify-content-center">
-
-    <!-- CARD 1 -->
-    <div class="col-12 col-sm-6 col-md-4">
-      <div class="card custom-card">
-
-        <div class="img-container">
-          <img src="img/floral1.jpg" class="card-img-top" alt="Smiley Face Nails">
-        </div>
-
-        <div class="card-body text-center">
-          <h3 class="card-title">Deep Forest Green Floral Nail Art</h3>
-
-          <!-- <p class="card-text">
-            Simple happy smiley face design, cute and beginner-friendly.
-          </p> -->
-          <p class="text-muted">This Deep Emerald Floral design features a rich,
-             glossy green base adorned with delicate hand-painted white blossoms and subtle golden accents. It offers a sophisticated botanical
-             aesthetic that perfectly blends high-fashion elegance with a refreshing, nature-inspired theme.</p>
-
-          <a href="view13.html" class="btn view-btn mt-3">View</a>
-        </div>
-
-      </div>
+    <!-- Left Side Image -->
+    <div class="col-md-6 text-center">
+      <img src="img/geometrc2.jpg" class="nails-img" alt="Nails Image">
+    </div>
+    
+    <!-- VERTICAL LINE -->
+    <div class="col-md-1 d-flex justify-content-center">
+      <div class="vertical-line"></div>
     </div>
 
-    <!-- CARD 2 -->
-    <div class="col-12 col-sm-6 col-md-4">
-      <div class="card custom-card">
+    <!-- Right Side Content -->
+    <div class="col-md-5">
+      <h2 class="title">Beautiful Nails Design</h2>
 
-        <div class="img-container">
-          <img src="img/floral2.jpg" class="card-img-top" alt="Emoji Nails">
+      <p class="desc">
+        Welcome to Nails Web. We provide the best nail designs with modern beauty trends.
+        Our designs are simple, elegant and professional.
+      </p>
+
+      <br>
+
+      <!-- Accordion -->
+      <div class="accordion" id="nailsAccordion">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#one">
+              How to Apply
+            </button>
+          </h2>
+          <div id="one" class="accordion-collapse collapse show" data-bs-parent="#nailsAccordion">
+            <div class="accordion-body">
+              First clean your nails properly using soap and water. Dry them completely so no moisture is left. Apply a thin layer of base coat, then carefully place the nail design from the cuticle area and press it gently for 20–30 seconds. Finish with a top coat for long-lasting shine and protection. Avoid touching water for at least 1–2 hours after application for best results.
+            </div>
+          </div>
         </div>
 
-        <div class="card-body text-center">
-          <h3 class="card-title">Soft Lavender Floral Nail Art</h3>
-
-          <!-- <p class="card-text">
-            Different emoji faces for a fun and colorful playful look.
-          </p> -->
-          <p class="text-muted">
-          This Soft Lavender Floral design features a delicate pastel base decorated with charming hand-painted blue daisies for a fresh, feminine look.
-           The minimalist style creates a clean and polished aesthetic that is perfect for everyday wear or a subtle seasonal statement.
-          </p>
-
-          <a href="view14.html" class="btn view-btn mt-3">View</a>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#two">
+              Care Instructions
+            </button>
+          </h2>
+          <div id="two" class="accordion-collapse collapse" data-bs-parent="#nailsAccordion">
+            <div class="accordion-body">
+              After applying nails, avoid heavy water exposure and harsh chemicals. Use cuticle oil daily to keep your nails healthy and shiny. Do not use nails as tools to open or scratch objects. Keep them clean and gently wipe with a soft cloth when needed. Proper care will make your nail design last longer and stay beautiful for days.
+            </div>
+          </div>
         </div>
 
-      </div>
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="col-12 col-sm-6 col-md-4">
-      <div class="card custom-card">
-
-        <div class="img-container">
-          <img src="img/floral3.jpg" class="card-img-top" alt="Cartoon Face Nails">
-        </div>
-
-        <div class="card-body text-center">
-          <h3 class="card-title">Coral Daisy Dream Nail Art</h3>
-
-          <!-- <p class="card-text">
-            Basic cartoon-style face design, easy and fun for beginners.
-          </p> -->
-          <p class="text-muted">This vibrant Coral Daisy design features a cheerful peach-orange base coat that is perfect for a warm,
-             sunny aesthetic. It showcases delicate,
-              hand-painted white daisies with small yellow centers as charming accent art on specific nails.</p>
-
-          <a href="view15.html" class="btn view-btn mt-3">View</a>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#three">
+              How to Remove
+            </button>
+          </h2>
+          <div id="three" class="accordion-collapse collapse" data-bs-parent="#nailsAccordion">
+            <div class="accordion-body">
+              To remove nails safely, soak your fingers in warm water for 10–15 minutes. This will loosen the adhesive. Slowly lift the nails from the edges instead of pulling them directly. You can also use a gentle nail remover solution. After removal, wash your hands and apply moisturizer or oil to restore natural nail strength and keep them healthy.
+            </div>
+          </div>
         </div>
 
       </div>
@@ -206,97 +166,12 @@
   </div>
 </div>
 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js?utm_source=chatgpt.com"></script>
 
-<!-- Complex Designs -->
+<script src="view.js"></script>
 
-<div class="container py-5">
-  <h1 class="text-center">Complex Designs</h1>
-
-  <div class="row g-5 justify-content-center">
-
-    <!-- CARD 1 -->
-    <div class="col-12 col-sm-6 col-md-4">
-      <div class="card custom-card">
-
-        <div class="img-container">
-          <img src="img/floral4.jpg" class="card-img-top" alt="Smiley Face Nails">
-        </div>
-
-        <div class="card-body text-center">
-          <h3 class="card-title">Whimsical Spring Floral</h3>
-
-          <!-- <p class="card-text">
-            Simple happy smiley face design, cute and beginner-friendly.
-          </p> -->
-          <p class="text-muted">
-This delightful design features a soft, high-gloss sheer pink base decorated with intricate white daisies,
- fine yellow dots, and subtle multi-colored glitter.
- It utilizes a delicate pastel palette of yellow, white, and translucent pink for a fresh, feminine aesthetic that is perfect for spring.
-          </p>
-
-          <a href="view16.html" class="btn view-btn mt-3">View</a>
-        </div>
-
-      </div>
-    </div>
-
-    
-    <!-- CARD 2 -->
-    <div class="col-12 col-sm-6 col-md-4">
-      <div class="card custom-card">
-
-        <div class="img-container">
-          <img src="img/floral5.jpg" class="card-img-top" alt="Smiley Face Nails">
-        </div>
-
-        <div class="card-body text-center">
-          <h3 class="card-title">Intricate Blue Floral Stamp Art</h3>
-
-          <!-- <p class="card-text">
-            Simple happy smiley face design, cute and beginner-friendly.
-          </p> -->
-          <p class="text-muted">
-            This Intricate Blue Floral design features a soft periwinkle base adorned with highly detailed indigo flower sketches for a sophisticated look.
-             The fine-line botanical patterns cover the entire nail,
-             creating a vintage-inspired aesthetic that resembles professional stamp art.
-          </p>
-
-          <a href="view17.html" class="btn view-btn mt-3">View</a>
-        </div>
-
-      </div>
-    </div>
-
-
-    <!-- CARD 3 -->
-
-    <div class="col-12 col-sm-6 col-md-4">
-      <div class="card custom-card">
-
-        <div class="img-container">
-          <img src="img/floral6.jpg" class="card-img-top" alt="Smiley Face Nails">
-        </div>
-
-        <div class="card-body text-center">
-          <h3 class="card-title">Winter Sky Lace Manicure</h3>
-
-          <!-- <p class="card-text">
-            Simple happy smiley face design, cute and beginner-friendly.
-          </p> -->
-          <p class="text-muted">
-           This Winter Sky Lace manicure features a stunning blue-to-white ombre base that mimics the soft transition 
-           of a cold morning sky.
-            Each nail is intricately layered with delicate white lace stamping and
-             fine floral patterns for a sophisticated, high-quality finish.
-          </p>
-
-          <a href="view18.html" class="btn view-btn mt-3">View</a>
-        </div>
-
-      </div>
-    </div>
-
-     <footer>
+<footer>
         <div class="container">
             <div class="row g-4">
                 <div class="footer-txt col-md-4">
@@ -361,11 +236,5 @@ This delightful design features a soft, high-gloss sheer pink base decorated wit
             <p class="text-center small mb-0">&copy; 2026 Nailoria Nail Art Studio. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="navbar.js"></script>
-
-
 </body>
 </html>

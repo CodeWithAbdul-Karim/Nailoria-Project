@@ -1,0 +1,103 @@
+/* FOOTER SEC START */
+footer {
+  background: linear-gradient(160deg, #2b2230, #3d2a3a);
+  color: white;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  font-family: sans-serif;
+  padding: 2.5rem 0 1.5rem;
+}
+
+footer .footer-txt {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+footer .footer-txt ul {
+  padding: .5rem 0 0 0rem;
+  margin: 0;
+  list-style-type: none;
+}
+
+footer .footer-txt ul li a {
+  text-decoration: none;
+  color: #f0e6ec;
+}
+
+footer .footer-txt ul li a:hover {
+  color: #ff7aa6;
+  transition: color .2s;
+}
+
+footer .footer-txt ul li {
+  padding-bottom: .5rem;
+  color: #f0e6ec;
+}
+
+footer .footer-txt ul img {
+  margin-right: 6px;
+  color: #e71db1;
+  background-color: #a94438;
+}
+
+footer .footer-logo-con {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.2rem;
+}
+
+footer .footer-logo-con .footer-logo img {
+  width: clamp(50px, 8vw, 60px);
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+footer .footer-logo-con .footer-logo-name img {
+  width: clamp(110px, 14vw, 135px);
+
+}
+
+footer .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+footer .social-icons .all-icon {
+  transition: all .2s;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+footer .social-icons .all-icon img {
+  width: 25px;
+}
+
+footer .social-icons .youtube-icon img {
+  width: 30px;
+}
+
+footer .social-icons .whatsapp-icon img {
+  width: 27px;
+}
+
+footer .social-icons .instagram-icon img {
+  width: 33px;
+}
+
+footer .social-icons .all-icon:hover {
+  cursor: pointer;
+  background-color: #ff7aa6;
+  transform: translateY(-2px);
+}
+
+footer ul li i {
+  color: #ff7aa6;
+  margin-right: .4rem;
+}
+
+/* FOOTER SEC END */
