@@ -101,6 +101,9 @@ body {
 }
 
 .design .hero-sec .main-heading h1 {
+  text-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(255, 255, 255, 0.12);
   font-family: 'Playfair Display';
 }
 
@@ -112,17 +115,20 @@ body {
 .design .main-heading p {
   text-align: center;
   margin-top: 1.4rem;
+  text-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.45),
+    0 4px 12px rgba(0, 0, 0, 0.25);
   font-weight: bold;
 }
 
 /* FILTER BUTTONS */
 
 .filter-btns .btn {
-    display: inline-flex !important;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 50px;
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
   background-color: white;
   border-radius: 0 25px;
   padding: 12px 14px;
