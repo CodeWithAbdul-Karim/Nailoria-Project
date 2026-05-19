@@ -181,7 +181,7 @@ nav .nav-underline {
 /* HERO SECTION */
 .header-content {
   position: relative;
-  background-image: url(images/Home/header-img.png);
+  background-image: url(images/Home/header-img.webp);
   background-repeat: no-repeat;
   background-size: cover;
   height: 85vh;
@@ -475,7 +475,7 @@ footer ul li i {
 /* BOTH HERO SEC  */
 .contact-feedback .hero-sec {
   position: relative;
-  background-image: url(images/contact/banner.png);
+  background-image: url(images/contact/banner.webp);
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
@@ -634,7 +634,7 @@ footer ul li i {
 
 .about-nail .hero-sec {
   position: relative;
-  background-image: url(images/About/aboutnailart/banner.png);
+  background-image: url(images/About/aboutnailart/banner.webp);
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
@@ -840,7 +840,7 @@ footer ul li i {
 /* HERO SEC  */
 .aboutus .hero-sec {
   position: relative;
-  background-image: url(images/About/aboutus/hero-sec.png);
+  background-image: url(images/About/aboutus/hero-sec.webp);
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
@@ -973,7 +973,7 @@ footer ul li i {
 
 .gallery .hero-sec {
   position: relative;
-  background-image: url(images/gallery/gallery-banner.png);
+  background-image: url(images/gallery/gallery-banner.webp);
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
