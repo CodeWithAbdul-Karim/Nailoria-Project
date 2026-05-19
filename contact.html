@@ -157,20 +157,20 @@
                 </p>
                 <div class="row mt-5 g-4">
                     <div class="contact-side col-lg-6 mt-3">
-                        <form id="nailoria-form" class="nailoria-contact form-card">
+                          <form id="nailoria-form" class="nailoria-contact form-card" novalidate>
                             <div class="mb-3">
                                 <label for="name" class="form-label input-field">Name</label>
-                                <input type="text" id="name" class="form-control">
+                                <input type="text" id="name" name="name" class="form-control" autocomplete="name">
                                 <p class="error text-danger mt-1"></p>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label input-field">Email</label>
-                                <input type="email" id="email" class="form-control" placeholder="example@gmail.com">
+                                <input type="email" id="email" name="email" class="form-control" placeholder="example@gmail.com" autocomplete="email">
                                 <p class="error text-danger mt-1"></p>
                             </div>
                             <div class="mb-3">
                                 <label for="comment" class="mb-2">Message</label>
-                                <textarea class="form-control input-field" rows="5" id="comment" name="text"></textarea>
+                                <textarea class="form-control input-field" rows="5" id="comment" name="comment" autocomplete="off"></textarea>
                                 <p class="error text-danger mt-1"></p>
                             </div>
                             <button type="submit" class="btn btn-primary w-100">Submit</button>

@@ -440,13 +440,13 @@
                             </a>
                         </div>
                     </div>
-                      <div class="col-lg-3 d-flex justify-content-center mb-3">
-                            <div class="gallery-img">
-                                <a href="glitter.html#glitterCard-1" title="Glitter-designs">
-                                    <img src="images/gallery/glitter1.jpg" alt="">
-                                </a>
-                            </div>
+                    <div class="col-lg-3 d-flex justify-content-center mb-3">
+                        <div class="gallery-img">
+                            <a href="glitter.html#glitterCard-1" title="Glitter-designs">
+                                <img src="images/gallery/glitter1.jpg" alt="">
+                            </a>
                         </div>
+                    </div>
                 </div>
                 <div class="text-center mt-4">
                     <a href="Gallery.html" class="sec-btn-border">More Details &#8594</a>
@@ -524,20 +524,20 @@
                 </p>
                 <div class="row mt-5 mb-5 g-4">
                     <div class="contact-side col-lg-6 mt-3">
-                        <form id="nailoria-form" class="nailoria-contact form-card">
+                        <form id="nailoria-form" class="nailoria-contact form-card" novalidate>
                             <div class="mb-3">
                                 <label for="name" class="form-label input-field">Name</label>
-                                <input type="text" id="name" class="form-control">
+                                <input type="text" id="name" name="name" class="form-control" autocomplete="name">
                                 <p class="error text-danger mt-1"></p>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label input-field">Email</label>
-                                <input type="email" id="email" class="form-control" placeholder="example@gmail.com">
+                                <input type="email" id="email" name="email" class="form-control" placeholder="example@gmail.com" autocomplete="email">
                                 <p class="error text-danger mt-1"></p>
                             </div>
                             <div class="mb-3">
                                 <label for="comment" class="mb-2">Message</label>
-                                <textarea class="form-control input-field" rows="5" id="comment" name="text"></textarea>
+                                <textarea class="form-control input-field" rows="5" id="comment" name="comment" autocomplete="off"></textarea>
                                 <p class="error text-danger mt-1"></p>
                             </div>
                             <button type="submit" class="btn btn-primary w-100">Submit</button>
@@ -565,16 +565,17 @@
             <div class="container">
                 <h1 class="text-center first-title">Share Your Feedback</h1>
                 <p class="head-para">Help us improve — tell us what you love or what we can do better.</p>
-                <form id="feedback-form" class="form-card mx-auto mt-4 mb-5">
+                <form id="feedback-form" class="form-card mx-auto mt-4 mb-5" novalidate>
                     <div class="row">
                         <div class="col-md-6 mt-1">
                             <label for="f-name" class="form-label input-field">Name</label>
-                            <input type="text" id="f-name" class="form-control">
+                            <input type="text" id="f-name" name="name" class="form-control" autocomplete="name">
                             <p class="error text-danger mt-1"></p>
                         </div>
                         <div class="col-md-6 mt-1">
                             <label for="f-email" class="form-label input-field">Email</label>
-                            <input type="email" id="f-email" class="form-control" placeholder="example@gmail.com">
+                            <input type="email" id="f-email" name="email" autocomplete="email" class="form-control"
+                                placeholder="example@gmail.com">
                             <p class="error text-danger mt-1"></p>
                         </div>
                         <div class="col-md-12 mt-1">
@@ -591,7 +592,8 @@
                         </div>
                         <div class="col-md-12 mt-1">
                             <label for="feedback" class="mb-2">Your feedback</label>
-                            <textarea class="form-control input-field" rows="5" id="feedback" name="text" placeholder="Tell us about your experience"></textarea>
+                            <textarea class="form-control input-field" rows="5" id="feedback" name="feedback"
+                                placeholder="Tell us about your experience" autocomplete="off"></textarea>
                             <p class="error text-danger mt-1"></p>
                         </div>
                         <button type="submit" class="btn btn-primary w-100" id="submit-change-color">Submit</button>
