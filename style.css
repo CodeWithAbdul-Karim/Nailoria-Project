@@ -212,10 +212,19 @@ nav .nav-underline {
   color: white;
   font-family: 'Playfair Display';
   border-radius: 10px;
+  text-shadow: 
+        0 3px 8px rgba(0,0,0,0.4),
+        0 0 20px rgba(255,255,255,0.12);
 }
 
 .head-txt-container .head-main-txt .first-title span {
   color: lightyellow;
+}
+
+.head-txt-container .head-sub-txt span{
+    text-shadow: 
+        0 2px 4px rgba(0,0,0,0.45),
+        0 4px 12px rgba(0,0,0,0.25);
 }
 
 .header-content .head-sub-txt {
@@ -667,7 +676,7 @@ footer ul li i {
 }
 
 .aboutnail-intro .container p {
-  line-height: 1.6rem;
+  line-height: 1.8rem;
   text-align: justify;
   font-size: 16px;
 }
@@ -753,6 +762,7 @@ footer ul li i {
 }
 
 .evolutionOfnail .evolution-text-side p {
+  line-height: 1.8rem;
   max-width: 495px;
 
 }
@@ -782,6 +792,7 @@ footer ul li i {
 .evolutionOfnail .evolution-text-side .point p {
   font-size: 14px;
   width: 222px;
+  line-height: 1.5rem;
 }
 
 .evolutionOfnail .evolution-text-side img {
@@ -1113,8 +1124,212 @@ footer ul li i {
 /* ABOUT US END */
 
 
+/* DESIGN SECTION  */
+
+/* CARD */
+.design-section .custom-card {
+  border: 1px solid#ff4f87;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(135deg, lightpink, white) border-box;
+
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
 
 
+.design-section .img-container {
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+/* img */
+.design-section .card-img-top {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.design-section .custom-card:hover .card-img-top {
+  transform: scale(1.10);
+}
+
+/* CARD BODY */
+.design-section .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 22px;
+}
+
+/* TITLE */
+.design-section .card-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* TEXT */
+.design-section .card-text {
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.6;
+}
+
+/* VIEW BUTTON */
+.design-section .view-btn {
+  background-color: #fe699b;
+  border-radius: 0 25px;
+  padding: 12px 14px;
+  transition: .3s;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  display: inline-block;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.design-section .view-btn:hover {
+  background: #fd548c;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px -8px rgba(255, 79, 135, .55);
+}
+
+.design-section .custom-card {
+  max-width: 380px;
+  border-radius: 22px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.25), 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.design-section .custom-card:hover {
+  box-shadow: 0 18px 45px rgba(255, 20, 147, 0.45), 0 10px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.design-section .custom-card .text-muted {
+  line-height: 1.7rem;
+}
+
+/* SLIDER  */
+.design-section .reviewSlider {
+  padding-bottom: 60px;
+}
+
+.design-section .swiper-button-next,
+.swiper-button-prev {
+  top: auto;
+  bottom: 0;
+  color: #000;
+}
+
+.design-section .swiper-button-prev {
+  top: auto;
+  padding: 1.5rem;
+  background-color: #fe699b;
+  color: white;
+  transition: .3s;
+  font-weight: bolder;
+  border-radius: 50%;
+}
+
+.design-section .swiper-button-prev:hover {
+  transform: translateY(-2px);
+  background-color: #fd548c;
+}
+
+.design-section .swiper-button-next {
+  padding: 1.5rem;
+  background-color: #fe699b;
+  color: white;
+  transition: .3s;
+  font-weight: bolder;
+  border-radius: 50%;
+}
+
+.design-section .swiper-button-next:hover {
+  transform: translateY(-2px);
+  background-color: #fd548c;
+}
+
+.design-section .swiper-button-next:after,
+.design-section .swiper-button-prev:after {
+  font-size: 1rem;
+}
+
+.design-section .container .review-cards {
+  min-height: 190px;
+}
+
+.reviewSlider .swiper-slide{
+  height: 611px;
+}
+/* DESIGN SECTION END */
+
+/* GALLERY SECTION */
+
+.gallery-section .container .row .gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s ease, filter .3s ease;
+}
+
+.gallery-section .container .row .gallery-img {
+  width: 280px;
+  height: 280px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.gallery-section .container .row .gallery-img:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+}
+
+.gallery-section .container .gallery-img::after {
+  content: "\F52A";
+  font-family: "bootstrap-icons";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+  background: rgba(230, 57, 118, .25);
+  opacity: 0;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+
+.gallery-section .container .gallery-img:hover::after {
+  opacity: 1;
+  background: rgba(230, 57, 118, .25);
+}
+
+.gallery-section .container .gallery-img:hover img {
+  transform: scale(1.1);
+  filter: brightness(.7);
+}
+/* GALLERY SECTION END */
 
 /* MEDIA QUERY */
 /* NAVBAR  */
