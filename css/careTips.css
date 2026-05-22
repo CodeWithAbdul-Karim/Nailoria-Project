@@ -193,7 +193,7 @@
  /* HERO SEC BANNER */
  .careTips .hero-sec {
      position: relative;
-     background-image: url(images/careTips/banner.webp);
+     background-image: url(../images/careTips/banner.webp);
      background-repeat: no-repeat;
      background-size: cover;
      height: 70vh;

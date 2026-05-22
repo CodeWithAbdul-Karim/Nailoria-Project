@@ -75,7 +75,7 @@ body {
 /* HERO SEC  */
 .design .hero-sec {
   position: relative;
-  background-image: url(img/mainPage/banner.webp);
+  background-image: url(../img/mainPage/banner.webp);
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;

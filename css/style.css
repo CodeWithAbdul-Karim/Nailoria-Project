@@ -181,7 +181,7 @@ nav .nav-underline {
 /* HERO SECTION */
 .header-content {
   position: relative;
-  background-image: url(images/Home/header-img.webp);
+  background-image: url(../images/Home/header-img.webp);
   background-repeat: no-repeat;
   background-size: cover;
   height: 85vh;
@@ -475,7 +475,7 @@ footer ul li i {
 /* BOTH HERO SEC  */
 .contact-feedback .hero-sec {
   position: relative;
-  background-image: url(images/contact/banner.webp);
+  background-image: url(../images/contact/banner.webp);
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
@@ -634,7 +634,7 @@ footer ul li i {
 
 .about-nail .hero-sec {
   position: relative;
-  background-image: url(images/About/aboutnailart/banner.webp);
+  background-image: url(../images/About/aboutnailart/banner.webp);
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
@@ -807,7 +807,8 @@ footer ul li i {
 
 .evolutionOfnail .evolution-text-side .point p {
   font-size: 14px;
-  width: 222px;
+  width: 222px !important;
+  color: rgba(7, 8, 10, 0.75);
   line-height: 1.5rem;
 }
 
@@ -840,7 +841,7 @@ footer ul li i {
 /* HERO SEC  */
 .aboutus .hero-sec {
   position: relative;
-  background-image: url(images/About/aboutus/hero-sec.webp);
+  background-image: url(../images/About/aboutus/hero-sec.webp);
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
@@ -973,7 +974,7 @@ footer ul li i {
 
 .gallery .hero-sec {
   position: relative;
-  background-image: url(images/gallery/gallery-banner.webp);
+  background-image: url(../images/gallery/gallery-banner.webp);
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
@@ -1603,8 +1604,8 @@ footer ul li i {
 
 /* ALL MODALS */
 .modal-content {
-  border: none;
-  border-radius: 22px;
+  border: none !important;
+  border-radius: 22px !important;
   overflow: hidden;
 }
 
@@ -1683,18 +1684,18 @@ footer ul li i {
 
 .btn-close-modal {
   background: linear-gradient(135deg, var(--pink-deep), var(--pink-accent));
-  color: var(--white) I !important;
+  color: white !important;
   border: none !important;
   border-radius: 50px !important;
   padding: 11px 30px !important;
   font-size: 0.85rem !important;
-  font-weight: 500 !important;
+  font-weight: 700 !important;
   transition: opacity 0.2s !important;
 }
 
 .btn-close-modal:hover {
-  opacity: 0.88;
-  color: var(--white);
+  opacity: 0.88 !important;
+  color: white !important;
 }
 
 .feature-strip {
